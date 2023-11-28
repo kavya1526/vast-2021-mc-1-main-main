@@ -20,9 +20,9 @@ function groupByOrganization(d) {
     return organizationClusters;
 }
 
-// Function to clean the 'source' attribute in linksData
-function cleanLinksData(linksData) {
-    return linksData.map(d => ({
+// Function to clean the 'source' attribute in linksOfficialData
+function cleanlinksOfficialData(linksOfficialData) {
+    return linksOfficialData.map(d => ({
         source: cleanSourceAttribute(d.source),
         target: cleanSourceAttribute(d.target),
         frequency: d.frequency
@@ -39,21 +39,23 @@ function cleanSourceAttribute(source) {
 document.addEventListener('DOMContentLoaded', function () {
     Promise.all([
         d3.csv('Resume-Data.csv'),
-        d3.csv('links.csv') // Load links data from the CSV file
+        d3.csv('linksOfficial.csv'), // Load links data from the CSV file
+        d3.csv('linksUnofficial.csv')
     ]).then(function (values) {
         const resumeData = processDataType(values[0]);
         const nodeGroups = groupByOrganization(resumeData);
-        const linksData = values[1];
+        const linksOfficialData = values[1];
+        const linksUnofficialData = values[2];
         console.log(resumeData);
         console.log(nodeGroups);
-        console.log(linksData);
-        plotClusters(resumeData, nodeGroups, linksData);
+        console.log(linksOfficialData);
+        plotClusters(resumeData, nodeGroups, linksOfficialData,linksUnofficialData);
     });
 });
 
 
-function plotClusters(resumeData, nodeGroups, linksData) {
-    console.log(linksData);
+function plotClusters(resumeData, nodeGroups, linksOfficialData, linksUnofficialData) {
+    console.log(linksOfficialData);
 
     const margin = { top: 50, right: 30, bottom: 120, left: 60 },
         width = 750 - margin.left - margin.right,
@@ -124,7 +126,7 @@ function plotClusters(resumeData, nodeGroups, linksData) {
     console.log(resumeData)
 
     const links = svg.selectAll(".link")
-        .data(linksData.filter(d => parseFloat(d.frequency)>5))
+        .data(linksOfficialData.filter(d => parseFloat(d.frequency)>5))
         .enter().append("line")  // You can use "line" instead of "path" if you want straight lines
         .attr("class", "link")
         .attr("stroke", "green")
@@ -219,7 +221,7 @@ function plotClusters(resumeData, nodeGroups, linksData) {
                 .style("opacity", 0);
         });
 
-   console.log(typeof parseFloat(linksData[0].frequency))
+   console.log(typeof parseFloat(linksOfficialData[0].frequency))
     
     x = Object(resumeData[0])
     console.log(resumeData[0], "object")

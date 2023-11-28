@@ -1,8 +1,8 @@
 name,role,impOfPeople,organization
-Ms. Ada Campo-Corrente ,Chief Information Officer for GASTech,10,GASTechBoard
-"Mr. Sten Sanjorge, Jr",President & CEO GASTech,10,GASTechBoard
-Ms. Ingrid Barranco,Chief Financial Officer of GASTech,9,GASTechBoard
-Mr.Orhan Strum,Chief Operating Officer for GASTech,8,GASTechBoard
+Ada Campo-Corrente,Chief Information Officer for GASTech,10,GASTechBoard
+Sten Sanjorge Jr,President & CEO GASTech,10,GASTechBoard
+Ingrid Barranco,Chief Financial Officer of GASTech,9,GASTechBoard
+Orhan Strum,Chief Operating Officer for GASTech,8,GASTechBoard
 Linnea Bergen,"Group Manager – Information Technology GASTech – Abila, Kronos",7,GASTechCommittee
 Lidelse Dedos,Engineering Group Manager -GASTech - Kronos,7,GASTechCommittee
 Marin Onda,"Site Manager-GASTech –Abila,Kronos",6,GASTechCommittee
@@ -29,7 +29,7 @@ Anda Ribera,"Senior Executive Assistant to the CFO -GASTech – Abila, Kronos",4
 Carla Forluniau,Administrative Assistant-GASTech – Kronos,3,GASTechEmployee
 Cornelia Lais,"Executive Assistant -GASTech – Abila,Kronos",3,GASTechEmployee
 Linda Lagos,"Executive Assistant -GASTech – Abila, Kronos",3,GASTechEmployee
-Rachel Panatal,"Executive Assistant-GASTech –Abila, Kronos",3,GASTechEmployee
+Rachel Pantanal,"Executive Assistant-GASTech –Abila, Kronos",3,GASTechEmployee
 Adan Morlun,Truck Driver GASTech - Kronos,2,GASTechEmployee
 Albina Hafon,"Truck Driver-Abila, Kronos",2,GASTechEmployee
 Claudio Hawelon,"Truck Driver, GASTech Abila, Kronos",2,GASTechEmployee
@@ -44,7 +44,7 @@ Valeria Morlun,Member - GASTech,1,GASTechEmployee
 Cecilia Morluniau,Member - GASTech,1,GASTechEmployee
 Varro Awelon,Member - GASTech,1,GASTechEmployee
 Vira Frente,Member - GASTech,1,GASTechEmployee
-Ruscella Mies.Haber,Member - GASTech,1,GASTechEmployee
+Ruscella Mies Haber,Member - GASTech,1,GASTechEmployee
 Kanon Herrero,Member - GASTech,1,GASTechEmployee
 Adra Nubarron,Member - GASTech,1,GASTechEmployee
 Dylan Scozzese,Member - GASTech,1,GASTechEmployee
@@ -66,3 +66,5 @@ Jeroen Karel,Founding Member POK,5,POKMember
 Valentine Mies,Founding Member POK,5,POKMember
 Yanick Calo,Founding Member POK,5,POKMember
 Joreto Katell,Founding Member POK,5,POKMember
+APA,Member,7,APA
+Government,Member,7,Government

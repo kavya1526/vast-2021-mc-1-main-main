@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Resume Relationships</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" />
+    <style src="network-link-style.css"></style>
+    <script src="network-link-script.js"></script>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+
+ <style>
+    .myContainer {
+        margin: auto;
+        width: 1200px;
+    }
+
+    .main-circle {
+        fill: none;
+        stroke: black;
+        stroke-width: 2;
+    }
+
+    .node {
+        stroke: black;
+        stroke-width: 2;
+    }
+
+    .link {
+        fill: none;
+        stroke: #ccc; /* Link color */
+        stroke-width: 2;
+    }
+
+    .d3-tooltip {
+        position: absolute;
+        opacity: 0;
+        padding: 10px;
+        color: #fff;
+        background: #000;
+        border: 2px solid #000;
+        border-radius: 5px;
+    }
+
+</style> 
+
+
+<body>
+    <div class="myContainer">
+        <br>
+        <h1 class="text-center">Network Link Graph</h1>
+        <br>
+        <hr>
+
+        <div class="border border-dark rounded p-2 mb-2 bg-light shadow-sm" id="plotDiv">
+            <br>
+            <svg id="plotSvg"></svg>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

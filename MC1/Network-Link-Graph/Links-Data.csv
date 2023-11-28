@@ -1,0 +1,6 @@
+source,target,frequency
+GASTechBoard,GASTechCommittee,5
+GASTechBoard,GASTechEmployee,6
+GASTechCommittee,GASTechEmployee,7
+GASTechEmployee,POKCommittee,3
+POKCommittee,POKMember,1
